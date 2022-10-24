@@ -11,7 +11,7 @@
 		<p>Click the button to get the current time</p>
 
 		<script>
-			const socket = new WebSocket('ws://localhost:5000/ws/web-clock-live/');
+			const socket = new WebSocket('ws://localhost:8000/ws/web-clock-live/');
 
 			socket.onmessage = function(e) {
 				const currentTime = JSON.parse(e.data).current_time;
